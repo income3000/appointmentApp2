@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   
   root 'page#home'
   resources :bookings
-  
+
+
   resources :rooms
   devise_for :users
 

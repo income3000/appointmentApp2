@@ -6,19 +6,28 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
         <li class="nav-item">
-          <%= link_to "Bookings", new_booking_path, class:"nav-link active"%> 
+          <%= link_to "Bookings", bookings_path, class:"nav-link active"%> 
         </li>
+         <li class="nav-item">
+          <%= link_to "Rooms", rooms_path, class:"nav-link active"%> 
+        </li>
+        <li class="nav-item">
+          <button class="nav"><%= link_to "sign in", new_user_session_path,  class:"nav-link active"%></button>
+        </li>
+       
         <li class="nav-item">
           <%= button_to "sign out", destroy_user_session_path, method: :delete,  class:"nav-link active"%>
         </li>
+   
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li><hr class="dropdown-divider">"new"</li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>

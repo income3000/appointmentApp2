@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+.naddy {
+	border: 5px solid black;
+	height: 25%;
+	width: 25%;
+	display: block;
+}
